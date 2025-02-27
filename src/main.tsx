@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './global.css'
-import {Sparkle} from '@phosphor-icons/react'
+
 import { Tweet } from './components/Tweet'
 import { Sidebar } from './components/Sidebar'
+import { Header } from './components/Header'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,10 +12,7 @@ createRoot(document.getElementById('root')!).render(
       <Sidebar/>
       <div className="content">
         <main className='timeline'>
-          <div className='timeline-header'>
-            Home
-            <Sparkle/>
-          </div>
+          <Header title="Home"/>
 
           <form className='new-tweet-form'>
             <label htmlFor="tweet">
