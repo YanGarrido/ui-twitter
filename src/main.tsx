@@ -1,10 +1,18 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import './global.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <div className='layout'>
+      <aside className='sidebar'>
+        <img src="" alt="" />
+        <nav></nav>
+        <button></button>
+      </aside>
+      <div className="content">
+
+      </div>
+    </div>
   </StrictMode>,
 )
