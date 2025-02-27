@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
       <aside className='sidebar'>
         <img src="" alt="" />
         <nav></nav>
-        <button></button>
+        <button>Tweet</button>
       </aside>
       <div className="content">
 
