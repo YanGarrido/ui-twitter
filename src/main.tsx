@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './global.css'
 import twitterlogo from './assets/twitter-logo.svg'
 import { Bell, BookmarkSimple,  DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User} from '@phosphor-icons/react'
+import { Tweet } from './components/Tweet'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -63,6 +64,11 @@ createRoot(document.getElementById('root')!).render(
             <button type='submit'>Tweet</button>
           </form>
           <div className="separator"/>
+
+          <Tweet/>
+          <Tweet/>
+          <Tweet/>
+          <Tweet/>
         </main>
 
       </div>
